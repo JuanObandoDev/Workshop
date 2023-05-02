@@ -9,6 +9,9 @@ import java.util.Scanner;
 
 public class ejercicio6 {
     public static void main(String[] args) {
+        final int MAX = 10;
+        final int MIN = 1;
+        final int ATTEMPTS = 5;
         // creamos una variable para guardar el numero ingresado por el usuario
         int userNum;
         // creamos un objeto de la clase Scanner para leer la entrada del usuario
@@ -16,12 +19,12 @@ public class ejercicio6 {
         // creamos un objeto de la clase Random para generar un numero aleatorio
         Random aleatorio = new Random();
         // generamos un numero aleatorio entre 1 y 10
-        int num = aleatorio.nextInt((10 - 1) + 1) + 1;
+        int num = aleatorio.nextInt(MAX - MIN + 1) + MIN;
         // recorremos el numero de intentos (5) que tiene el usuario para adivinar el
         // numero aleatorio
-        for (int i = 0; i <= 5; i++) {
+        for (int i = 0; i <= ATTEMPTS; i++) {
             // si el usuario ya ha intentado 5 veces, el usuario pierde
-            if (i == 5) {
+            if (i == ATTEMPTS) {
                 System.out.println("you lose");
                 break;
             }
