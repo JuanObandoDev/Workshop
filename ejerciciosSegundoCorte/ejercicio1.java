@@ -8,6 +8,8 @@ import java.util.Scanner;
 
 class ejercicio1 {
     public static void main(String[] args) {
+        final int MAX = 3999;
+        final int MIN = 1;
         // creamos un objeto de la clase Scanner para leer la entrada del usuario
         Scanner input = new Scanner(System.in);
         // leemos el numero a convertir
@@ -15,7 +17,7 @@ class ejercicio1 {
         // guardamos el numero en una variable de tipo int llamada num
         int num = input.nextInt();
         // verificamos que el numero este entre 1 y 3999
-        if (num < 1 || num > 3999) {
+        if (num < MIN || num > MAX) {
             // si no esta entre 1 y 3999 imprimimos un mensaje de error y terminamos el
             // programa
             System.out.println("The number is not between 1 and 3999");
