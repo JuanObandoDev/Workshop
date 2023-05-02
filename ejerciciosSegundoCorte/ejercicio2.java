@@ -15,15 +15,9 @@ public class ejercicio2 {
         // guardamos el numero en una variable de tipo int llamada num
         int num = input.nextInt();
         // imprimimos la secuencia de fibonacci hasta el numero ingresado por el usuario
-        for (int i = 0; i <= num; i++) {
-            // si el numero de la secuencia es menor o igual al numero ingresado por el
-            // usuario lo imprimimos
-            if (fibonacciSequence(i) <= num) {
-                System.out.print(fibonacciSequence(i) + ", ");
-            } else { // si el numero de la secuencia es mayor al numero ingresado por el usuario
-                     // terminamos el ciclo
-                break;
-            }
+        for (int i = 0; fibonacciSequence(i) <= num; i++) {
+            // imprimimos la secuencia de fibonacci
+            System.out.print(fibonacciSequence(i) + ", ");
         }
     }
 
