@@ -8,8 +8,9 @@ import java.util.Arrays;
 
 public class ejercicio7 {
     public static void main(String[] args) {
+        final int MAX_NUMS = 100;
         // creamos un arreglo de 100 elementos
-        int[] zerOne = new int[100];
+        int[] zerOne = new int[MAX_NUMS];
         // creamos dos variables para contar los 0's y los 1's
         int zeroCount = 0;
         int oneCount = 0;
