@@ -18,10 +18,10 @@ class ejercicio5 {
         // y el texto con la primera letra en mayusculas
         System.out.println("Your name in lower case: " + name.toLowerCase());
         System.out.println("Your name in upper case: " + name.toUpperCase());
-        System.out.println("Your name with first letter in upper case: " + firstUpper(name));
+        System.out.println("Your name with first letter in upper case: " + firstLetterToUpperCase(name));
     }
 
-    public static String firstUpper(String text) {
+    public static String firstLetterToUpperCase(String text) {
         // pasamos el texto a minusculas
         text = text.toLowerCase();
         // creamos una variable de tipo String llamada res
