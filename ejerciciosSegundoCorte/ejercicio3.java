@@ -16,11 +16,11 @@ public class ejercicio3 {
         String text = input.nextLine();
         // imprimimos el texto original, el texto invertido y si es palindromo o no
         System.out.println("Original text: " + text);
-        System.out.println("Reversed text: " + reverse(text));
+        System.out.println("Reversed text: " + reverseText(text));
         System.out.println("Is palindrome? " + isPalindrome(text));
     }
 
-    public static String reverse(String text) {
+    public static String reverseText(String text) {
         // creamos una variable de tipo String llamada reversed
         String reversed = "";
         // recorremos la cadena de texto de atras hacia adelante
